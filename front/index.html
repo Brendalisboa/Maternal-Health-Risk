@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Risco Materno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação de Risco Gestacional</h1>
+        <p class="subtitle">Insira os sinais vitais para predição via Machine Learning</p>
+        
+        <form id="riskForm">
+            <div class="input-group">
+                <label>Idade:</label>
+                <input type="number" id="Age" required placeholder="Ex: 28">
+            </div>
+            
+            <div class="input-group">
+                <label>Pressão Sistólica (mmHg):</label>
+                <input type="number" id="SystolicBP" required placeholder="Ex: 120">
+            </div>
+            
+            <div class="input-group">
+                <label>Pressão Diastólica (mmHg):</label>
+                <input type="number" id="DiastolicBP" required placeholder="Ex: 80">
+            </div>
+            
+            <div class="input-group">
+                <label>Glicose (mg/dL):</label>
+                <input type="number" step="0.1" id="BS" required placeholder="Ex: 90.0">
+            </div>
+            
+            <div class="input-group">
+                <label>Temperatura Corporal (°C):</label>
+                <input type="number" step="0.1" id="BodyTemp" required placeholder="Ex: 36.5">
+            </div>
+            
+            <div class="input-group">
+                <label>Frequência Cardíaca:</label>
+                <input type="number" id="HeartRate" required placeholder="Ex: 75">
+            </div>
+            
+            <button type="submit" id="btnSubmit">Avaliar Risco</button>
+        </form>
+
+        <div id="resultadoContainer" class="hidden">
+            <h2>Diagnóstico Preditivo:</h2>
+            <p id="resultadoTexto"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
