@@ -44,6 +44,6 @@ pytest
 O teste test_desempenho_modelo garante que o modelo em produção possua uma acurácia mínima aceitável (Threshold) superior a 75%.
 
 # Vídeo de Apresentação
-O vídeo com a explicação do modelo de Machine Learning pode ser acessado através do link abaixo:
-[![Assista ao vídeo](https://img.youtube.com/vi/OjV4umPv6-E/0.jpg)](https://www.youtube.com/watch?v=OjV4umPv6-E)
+
+Link para o vídeo no YouTube: https://www.youtube.com/watch?v=OjV4umPv6-E
 ---
